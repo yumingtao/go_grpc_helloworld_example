@@ -9,12 +9,12 @@
 - go install google.golang.org/grpc
 
 # 开发helloworld
-- 创建helloworld目录
-- 编写helloworld.proto
+- 在项目根目录创建helloworld目录
+- 编写helloworld/helloworld.proto
 - 在项目根目录运行
 protoc helloworld/helloworld.proto --go_out=plugins=grpc:.
-- 编写服务端
-- 编写client端
+- 编写服务端, helloworld_server/helloworld_server.go
+- 编写client端, helloworld_client/helloworld_client.go
 - 运行服务端, go run hello_server.go
 - 运行client端, go run hello_client.go
 
